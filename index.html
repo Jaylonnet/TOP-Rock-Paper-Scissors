@@ -1,18 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="styles/main.css">
+    <script src="scripts/rps.js" defer></script>
 </head>
+
 <body>
-    <script>
-        function computerPlay() {
-            const rpsGuesses = ['Rock', 'Paper', 'Scissors'];
-            let guess = rpsGuesses[Math.floor(Math.random() * rpsGuesses.length)];
-            return guess
-        }
-    </script>
+    <div class="container">
+        <h1>Rock, Paper, Scissors</h1>
+        <h2 id="round-heading">Round <span id="round-number">1</span></h2>
+        <div id="player-container">
+            <div id="player">
+                <h3>Player</h3>
+                <div class="choice">N/A</div>
+            </div>
+            <div id="computer">
+                <h3>Computer</h3>
+                <div class="choice">N/A</div>
+            </div>
+        </div>
+        <div id="results">
+            <h3>Results</h3>
+            <p>Round Winner: <span id="round-winner">N/A</span></p>
+        </div>
+        <div id="rps-buttons">
+            <button>Rock</button>
+            <button>Paper</button>
+            <button>Scissors</button>
+        </div>
+    </div>
 </body>
+
 </html>
