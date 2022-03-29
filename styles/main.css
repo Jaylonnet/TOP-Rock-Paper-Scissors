@@ -25,7 +25,7 @@ body {
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
-.container h1, #round-heading, h2, h3, h4 {
+h1, #round-heading, h2, h3, h4, th {
     font-weight: 500;
 }
 
@@ -41,6 +41,15 @@ body {
 
 #results {
     margin-top: 10px;
+}
+
+#results table {
+    margin: auto;
+    margin-top: 10px;
+}
+
+#results table th {
+    padding: 0 10px;
 }
 
 #rps-buttons {
